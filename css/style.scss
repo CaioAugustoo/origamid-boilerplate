@@ -1,5 +1,4 @@
 @import "normalize";
-@import "reset";
 @import "main";
 @import "grid";
 
@@ -19,6 +18,11 @@
   @else if $point == m {
     @media only screen and (max-width: 767px)  { @content; }
   }
+}
+
+.hidden {
+display: none !important;
+visibility: hidden;
 }
 
 // !PROGRAMMING ========
