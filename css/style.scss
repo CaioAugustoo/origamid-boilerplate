@@ -1,0 +1,27 @@
+@import "normalize";
+@import "reset";
+@import "main";
+@import "grid";
+
+// Define o estilo da seleção
+::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
+::selection { background: #333; color:#fff; text-shadow: none; } 
+
+
+// Mixin utilizado para colocar as midia-queries dentro do código
+@mixin d($point) {
+	@if $point == t-m {
+    @media only screen and (max-width: 959px) { @content; }
+  }
+  @if $point == t {
+    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+  }
+  @else if $point == m {
+    @media only screen and (max-width: 767px)  { @content; }
+  }
+}
+
+// !PROGRAMMING ========
+
+
+// !SPRITES ========
