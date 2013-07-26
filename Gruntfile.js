@@ -86,13 +86,17 @@ module.exports = function(grunt) {
 
     // deploy via rsync
     deploy: {
-      staging: {
-        src: "./",
-        //dest: "/home/seropedica/obutteco.zayph.com/",
-        //host: "seropedica@origamid.com",
+      options: {
+        exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc'],
         recursive: true,
-        syncDest: true,
-        exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc']
+      },
+      prod: {
+      	options: {
+		      src: './',
+	        dest: "/home/origamidev/nomedosite.zayph.com/",
+	        host: "origamidev@origamid.com",
+	        syncDestIgnoreExcl: true
+        }
       }
     }
 
