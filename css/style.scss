@@ -1,32 +1,33 @@
-@import "normalize";
-@import "main";
-@import "grid";
+// COMPASS
+
 @import "compass";
 
-// Define o estilo da seleção
-::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
-::selection { background: #333; color:#fff; text-shadow: none; } 
+// BOILERPLATE
 
+@import "boilerplate/normalize";
+@import "boilerplate/h5bp";
+@import "boilerplate/grid";
 
-// Mixin utilizado para colocar as midia-queries dentro do código
-@mixin d($point) {
-	@if $point == t-m {
-    @media only screen and (max-width: 959px) { @content; }
-  }
-  @if $point == t {
-    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
-  }
-  @else if $point == m {
-    @media only screen and (max-width: 767px)  { @content; }
-  }
-}
+// GLOBAL
 
-.hidden {
-display: none !important;
-visibility: hidden;
-}
+@import "global/fonts";
+@import "global/variables-mixins";
+@import "global/global";
 
-// !PROGRAMMING ========
+// SHARED
 
+@import "shared/shared";
+@import "shared/header";
+@import "shared/footer";
 
-// !SPRITES ========
+// PAGES
+
+@import "pages/index";
+
+// ANIMATION
+
+@import "global/animation";
+
+// PLUGINS
+
+@import "plugins/*";

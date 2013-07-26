@@ -34,5 +34,6 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="img/apple/apple-touch-icon-144x144-precomposed.png">
 	
 	<link rel="stylesheet" href="style.css">
+	<script src="js/vendor/modernizr.custom.51217.js"></script>
 </head>
 <body>

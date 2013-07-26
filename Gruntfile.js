@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     // watch for changes and trigger compass, jshint, uglify and livereload
     watch: {
       compass: {
-        files: ['css/*.{scss,sass}'],
+        files: ['css/**/*.{scss,sass}'],
         tasks: ['compass']
       },
       js: {
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       all: [
       'Gruntfile.js',
-      'js/source/*.js'
+      'js/source/main.js'
       ]
     },
 
@@ -88,19 +88,11 @@ module.exports = function(grunt) {
     deploy: {
       staging: {
         src: "./",
-        dest: "~/path/to/theme",
-        host: "user@host.com",
+        //dest: "/home/seropedica/obutteco.zayph.com/",
+        //host: "seropedica@origamid.com",
         recursive: true,
         syncDest: true,
         exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc']
-      },
-      production: {
-        src: "./",
-        dest: "~/path/to/theme",
-        host: "user@host.com",
-        recursive: true,
-        syncDest: true,
-        exclude: '<%= rsync.staging.exclude %>'
       }
     }
 

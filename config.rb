@@ -7,6 +7,7 @@ sass_dir = "css"
 images_dir = "img"
 javascripts_dir = "js"
 fonts_dir = "fonts"
+http_generated_images_path = "img/sprite/"
 
 output_style = :compressed
 
