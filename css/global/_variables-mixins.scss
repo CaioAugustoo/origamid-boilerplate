@@ -12,21 +12,21 @@
 
 // Sprite
 
-$icons-spacing: 10px;
-$icons-contact-info-detail-repeat: repeat-x;
-@import "../img/icons/*.png";
-@include all-icons-sprites(tabcontrols-a, $offset-x: 50%);
+//$icons-spacing: 10px;
+//$icons-contact-info-detail-repeat: repeat-x;
+//@import "../img/icons/*.png";
+//@include all-icons-sprites(tabcontrols-a, $offset-x: 50%);
 
  
 // Mixins
 
 @mixin typePrimary {
-	font-family: "geared_slabregular", "Verdana", sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 }
 
 @mixin typeSecondary {
 	font-weight: normal;
-	font-family: "Futura", "Helvetica", sans-serif;
+	font-family: "Georgia", serif;
 }
 
 @mixin type-1($size) {
