@@ -13,6 +13,7 @@
 @import "global/fonts";
 @import "global/variables-mixins";
 @import "global/global";
+@import "global/animation";
 
 // SHARED
 
@@ -23,11 +24,3 @@
 // PAGES
 
 @import "pages/index";
-
-// ANIMATION
-
-@import "global/animation";
-
-// PLUGINS
-
-@import "plugins/*";
