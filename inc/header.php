@@ -26,6 +26,5 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	
 	<link rel="stylesheet" href="style.css">
-	<script src="js/vendor/modernizr.custom.68175.js"></script>
 </head>
 <body>
