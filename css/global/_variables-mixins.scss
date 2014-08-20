@@ -9,18 +9,11 @@
 //$bg--dark: url('img/bg-dark.png');
 //$bg--light: url('img/bg-light.png');
 
-
-// Sprite
-
-//$icons-spacing: 10px;
-//$icons-contact-info-detail-repeat: repeat-x;
-//@import "../img/icons/*.png";
-//@include all-icons-sprites(tabcontrols-a, $offset-x: 50%);
-
  
 // Mixins
 
 @mixin typePrimary {
+	font-weight: normal;
 	font-family: "Helvetica", "Arial", sans-serif;
 }
 
@@ -30,56 +23,56 @@
 }
 
 @mixin type-1($size) {
+	@include typePrimary;
+	@if $size == 14 {
+		font-size: 0.875em;
+		line-height: 1.42857142857143em;	
+	}
 	@if $size == 18 {
-		@include typePrimary;
 		font-size: 1.125em;
 		line-height: 1.3888889em;	
 	}
 	@if $size == 24 {
-		@include typePrimary;
 		font-size: 1.5em;
 		line-height: 1.25em;	
 	}
 	@if $size == 36 {
-		@include typePrimary;
 		font-size: 2.25em;
-		line-height: 1.6666667em;
+		line-height: 1.6666667em;	
 	}
 	@if $size == 48 {
-		@include typePrimary;
 		font-size: 3em;
 		line-height: 1em;	
 	}
 	@if $size == 60 {
-		@include typePrimary;
 		font-size: 3.75em;
 		line-height: 1em;	
 	}
 }
 
 @mixin type-2($size) {
+	@include typeSecondary;
 	@if $size == 14 {
-		@include typeSecondary;
 		font-size: 0.875em;
 		line-height: 1.42857142857143em;	
 	}
 	@if $size == 18 {
-		@include typeSecondary;
 		font-size: 1.125em;
 		line-height: 1.3888889em;	
 	}
 	@if $size == 24 {
-		@include typeSecondary;
 		font-size: 1.5em;
 		line-height: 1.25em;	
 	}
 	@if $size == 36 {
-		@include typeSecondary;
 		font-size: 2.25em;
 		line-height: 1.6666667em;	
 	}
+	@if $size == 48 {
+		font-size: 3em;
+		line-height: 1em;	
+	}
 	@if $size == 60 {
-		@include typeSecondary;
 		font-size: 3.75em;
 		line-height: 1em;	
 	}
